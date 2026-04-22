@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# 🌍 Küresel Din Analitiği (Global Religion Analytics)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern, interaktif ve veri odaklı bir dünya inanç haritası. Bu platform, dünya genelindeki din dağılımlarını, mezhep detaylarını ve demografik verileri premium bir görsel arayüzle sunar.
 
-Currently, two official plugins are available:
+**🚀 Canlı Demo:** [https://magnusmaximus77.github.io/kuresel-din-analitik/](https://magnusmaximus77.github.io/kuresel-din-analitik/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Öne Çıkan Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **💎 Premium Glassmorphism Arayüzü:** Modern "Bento Box" düzeni ve şeffaf katmanlarla üst düzey kullanıcı deneyimi.
+- **🗺️ İnteraktif Choropleth Harita:** D3.js ile güçlendirilmiş, yakınlaştırılabilir (zoom) ve dinamik renk ölçeklendirmeli dünya haritası.
+- **📊 Detaylı Analitik Paneli:** Ülke bazlı inanç dağılımları, nüfus verileri ve karşılaştırmalı grafikler.
+- **🔍 Akıllı Filtreleme:** Din ve mezhep bazlı anlık harita güncellemeleri.
+- **📱 Responsive Tasarım:** Masaüstü ve mobil cihazlarla tam uyumlu yapı.
+- **🛰️ Canlı Veri Göstergesi:** Veri şeffaflığını sağlayan kaynak ve güvenilirlik detayları.
 
-## Expanding the ESLint configuration
+## 🛠️ Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Core:** React 19 + TypeScript
+- **Styling:** Modern Vanilla CSS (Glassmorphism & Custom Properties)
+- **Visuals:** D3.js (Harita motoru) & Recharts (Analitik grafikler)
+- **State Management:** Zustand
+- **Build Tool:** Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Yerel Kurulum
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Projeyi kendi bilgisayarınızda çalıştırmak için:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/MagnusMaximus77/kuresel-din-analitik.git
+   ```
+2. Klasöre girin:
+   ```bash
+   cd kuresel-din-analitik
+   ```
+3. Bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+4. Geliştirme sunucusunu başlatın:
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📄 Veri Kaynakları ve Şeffaflık
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Bu projede kullanılan veriler; Pew Research Center, ARDA (Association of Religion Data Archives) ve UN Population Division gibi güvenilir açık kaynaklardan derlenmiştir. Veri setleri düzenli olarak güncellenmektedir.
+
+---
+*Bu proje, modern web teknolojilerinin analitik veri görselleştirme ile birleştiği profesyonel bir çalışmadır.*
