@@ -2,7 +2,7 @@
 
 Modern, interaktif ve veri odaklı bir dünya inanç haritası. Bu platform, dünya genelindeki din dağılımlarını, mezhep detaylarını ve demografik verileri premium bir görsel arayüzle sunar.
 
-**🚀 Canlı Demo:** [https://magnusmaximus77.github.io/kuresel-din-analitik/](https://magnusmaximus77.github.io/kuresel-din-analitik/)
+**🚀 Canlı Demo:** [https://maximusprime77.github.io/kuresel-din-analitik/](https://maximusprime77.github.io/kuresel-din-analitik/)
 
 ---
 
